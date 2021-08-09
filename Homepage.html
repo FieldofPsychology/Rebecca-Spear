@@ -53,9 +53,9 @@
 	<p>Schedule your free consultation</p>
 </div>
 
-<div style="position: absolute; top: 5.08%; left: 57.47%; border: solid 2px orange; max-width: 200px; max-height: 200px;"> <img src="Pictures//Becky 10.jpg" width=100% height=auto></div>
+<div id="img1" style="position: absolute; max-width: 200px; max-height: 200px;"> <img src="Pictures//Becky 10.jpg" width=100% height=auto></div>
 
-<div style="position: absolute; top: 45.8%; left: 58.93%; border: solid 2px orange; max-width:400px; max-height: 300px;"><img src="Pictures//Persephone.jpg" width=100% height=auto></div>
+<div id="img2" style="position: absolute; top: 45.8%; left: 58.93%; border: solid 2px orange; max-width:400px; max-height: 300px;"><img src="Pictures//Persephone.jpg" width=100% height=auto></div>
 
 
 	</body>
@@ -90,13 +90,30 @@
   background-color: darkgray;
   color: white;
 }
-@media only screen and (max-width: 768px) {
-	img{
-	        top:0px;
-		left:0px;
-               
-		
+@media only screen and (min-width:768px){
+	#img1{
+		 top: 5.08%;
+		left: 57.47%;
+		border: solid 2px orange;
 	}
+	#img2{
+		top: 45.8%;
+		left: 58.93%;
+		border: solid 2px orange;
+	}
+		}
+@media only screen and (max-width: 768px) {
+	#img1{
+	        top: 50%;
+		left: 60%;
+		border: solid 2px orange;
+	}
+	#img2{
+		top: 95.8%;
+		left: 118.93%;
+		border: solid 2px orange;
+	}
+	
 }
 	</style>
 </HEAD>
